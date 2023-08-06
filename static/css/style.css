@@ -28,3 +28,17 @@ body {
     margin-left: 20px;
     margin-right: 50px;
 }
+
+.header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #14B1BF;
+    height: 50px;
+}
+
+a {
+    margin-left: 100px;
+    color: white;
+}
