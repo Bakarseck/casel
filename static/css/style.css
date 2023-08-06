@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+.post-header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.img-logo {
+    margin-left: 50px;
+    width: 200px;
+}
+
+.img-annonce {
+    height: 200px;
+    width: 90%;
+    background-color: #14B1BF;
+    margin-left: 20px;
+    margin-right: 50px;
+}
