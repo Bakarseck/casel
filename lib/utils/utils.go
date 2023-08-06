@@ -7,21 +7,22 @@ import (
 	"net/http"
 )
 
-func ValidateRequest(req *http.Request, res http.ResponseWriter, url, method string) bool {
+func ValidateRequest(req *http.Request, res http.ResponseWriter, url, method string) (int, bool) {
 
 	if req.URL.Path != url {
 		res.WriteHeader(http.StatusNotFound)
 		log.Println("404 ❌ - Page not found ", req.URL)
-		return false
+		return 404, false
 	}
 
 	if req.Method != method {
 		res.WriteHeader(http.StatusMethodNotAllowed)
 		fmt.Fprintf(res, "%s", "Error - Method not allowed")
 		log.Printf("405 ❌ - Method not allowed %s - %s on URL : %s\n", req.Method, method, url)
-		return false
+		return 405, false
 	}
-	return true
+
+	return 0, true
 }
 
 func RenderPage(pagePath string, data any, res http.ResponseWriter) {

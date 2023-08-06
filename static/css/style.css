@@ -9,6 +9,12 @@ body {
     height: 100vh;
 }
 
+.logo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
 .post-header {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -17,8 +23,8 @@ body {
 }
 
 .img-logo {
-    margin-left: 50px;
-    width: 200px;
+    margin-left: 3vw;
+    width: 14vw;
 }
 
 .img-annonce {
@@ -58,6 +64,7 @@ a {
     0% {
         background-position: 0% 0%;
     }
+
     100% {
         background-position: 100% 0%;
     }
@@ -88,4 +95,29 @@ a {
 .post {
     border: 1px solid #ccc;
     padding: 10px;
+}
+
+.error {
+    display: flex;
+    color: #14B1BF;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Pour les mobiles (jusqu'à 767px) */
+@media (max-width: 767px) {
+
+}
+
+/* Pour les tablettes en mode portrait (768px à 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Pour les tablettes et les ordinateurs de bureau (992px et plus) */
+@media (min-width: 992px) {
+    
 }
