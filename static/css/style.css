@@ -42,3 +42,50 @@ a {
     margin-left: 100px;
     color: white;
 }
+
+.about {
+    height: 200px;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 50px;
+    background-image: url("/static/img/img1.png");
+    background-size: cover;
+    background-position: center;
+    animation: scrollBackground 5s linear infinite;
+}
+
+@keyframes scrollBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+.actualites-section {
+    margin: 20px;
+}
+
+.actualites-section h2 {
+    text-align: center;
+    color: #14B1BF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.img-post {
+    width: 200px;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
